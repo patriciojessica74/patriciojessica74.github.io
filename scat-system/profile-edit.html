@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCAT CMS | Edit Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+</head>
+
+<body>
+
+    <!-- left -->
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="logoBox">
+                <img src="image/scatlogo.png" class="logo" alt="SCAT CMS">
+            </div>
+
+            <nav class="menu">
+                <a class="menuItem" href="dashboard.html">Dashboard</a>
+                <a class="menuItem" href="schedule.html">Schedule</a>
+                <a class="menuItem" href="attendance.html">Attendance Tracking</a>
+                <a class="menuItem active" href="profile.html">Profile</a>
+            </nav>
+            <div class="logoutWrap">
+                <button id="logoutBtn" class="logoutBtn">Logout</button>
+            </div>
+        </aside>
+
+        <!-- main -->
+        <main class="main">
+            <section class="card">
+                <div class="cardTop">
+                    <div class="avatarUpload" id="avatarBtn" title="Upload">
+                        <img src="image/profile.jpeg" id="profileImage" alt="Profile">
+                        <span class="uploadText">Upload</span>
+                        <input type="file" id="avatarUpload" accept="image/*" hidden>
+                    </div>
+
+                    <div class="titleWrap">
+                        <h2 class="cardTitle">PERSONAL INFO</h2>
+                    </div>
+                </div>
+
+                <!-- readonly rows -->
+                <div class="infoList">
+                    <div class="infoRow dim" id="eUsername">Username: </div>
+                    <div class="infoRow dim" id="eName">Name: </div>
+                    <div class="infoRow dim" id="eStudentId">Student ID: </div>
+                    <div class="infoRow dim" id="eProgram">Program: </div>
+
+                    <!-- editable year -->
+                    <div class="infoRow editRow">
+                        <span class="label">Year:</span>
+                        <select id="editYear" class="editInput">
+                            <option>1st</option>
+                            <option>2nd</option>
+                            <option>3rd</option>
+                            <option>4th</option>
+                        </select>
+                    </div>
+
+                    <!-- editable section -->
+                    <div class="infoRow editRow">
+                        <span class="label">Section:</span>
+                        <select id="editSection" class="editInput">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+
+                    <div class="infoRow dim" id="eEmail">Email: </div>
+                </div>
+
+                <div class="actions">
+                    <button class="saveBtn" id="saveBtn" type="button">Save</button>
+                    <span class="saveMsg" id="saveMsg"></span>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="profile-edit.js"></script>
+</body>
+
+</html>

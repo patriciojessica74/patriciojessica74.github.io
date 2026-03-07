@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCAT CMS | Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+</head>
+
+<body>
+    <!-- left -->
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="logoBox">
+                <img src="image/scatlogo.png" class="logo" alt="SCAT CMS">
+            </div>
+            <nav class="menu">
+                <a class="menuItem" href="dashboard.html">Dashboard</a>
+                <a class="menuItem" href="schedule.html">Schedule</a>
+                <a class="menuItem" href="attendance.html">Attendance Tracking</a>
+                <a class="menuItem active" href="profile.html">Profile</a>
+            </nav>
+            <div class="logoutWrap">
+                <button id="logoutBtn" class="logoutBtn">Logout</button>
+            </div>
+        </aside>
+
+        <!-- main -->
+        <main class="main">
+            <section class="card">
+                <div class="cardTop">
+                    <div class="avatarBox">
+                        <img src="image/profile.jpeg" id="profileImage" alt="Profile">
+                    </div>
+
+                    <div class="titleWrap">
+                        <h2 class="cardTitle">PERSONAL INFO</h2>
+                    </div>
+                </div>
+
+                <div class="infoList">
+                    <div class="infoRow" id="vUsername">Username: </div>
+                    <div class="infoRow" id="vName">Name: </div>
+                    <div class="infoRow" id="vStudentId">Student ID: </div>
+                    <div class="infoRow" id="vProgram">Program: </div>
+                    <div class="infoRow" id="vYear">Year: </div>
+                    <div class="infoRow" id="vSection">Section: </div>
+                    <div class="infoRow" id="vEmail">Email: </div>
+                </div>
+
+                <a class="updateLink" href="profile-edit.html">Update Your Personal Info</a>
+            </section>
+        </main>
+    </div>
+
+    <script src="profile-view.js"></script>
+</body>
+
+</html>

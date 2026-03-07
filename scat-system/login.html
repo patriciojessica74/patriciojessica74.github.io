@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- LEFT PANEL -->
+        <div class="left-panel">
+            <div class="overlay">
+                <img src="image/scatlogo.png" class="logo" alt="logo">
+            </div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right-panel">
+            <h1>WELCOME</h1>
+            <p>Log in to your account to continue</p>
+
+            <div class="input-group">
+                <!--img src="icons/user.png" alt="user"-->
+                <input type="text" placeholder="Enter username or email">
+            </div>
+
+            <div class="input-group">
+                <!-- <img src="icons/lockicon.png" alt="lock icon"> -->
+                <input type="password" placeholder="Enter password" id="password" aria-label="Password">
+
+                <button type="button" class="toggle-password" aria-label="Show password" aria-pressed="true"
+                    onclick="togglePassword(this)">
+                    <i class="fa fa-eye"></i>
+                </button>
+            </div>
+
+            <script>
+                function togglePassword(button) {
+                    const input = document.getElementById("password");
+                    const icon = button.querySelector("i");
+                    const isHidden = input.type === "password";
+
+                    input.type = isHidden ? "text" : "password";
+
+                    icon.classList.toggle("fa-eye", !isHidden);
+                    icon.classList.toggle("fa-eye-slash", isHidden);
+
+                    button.setAttribute(
+                        "aria-label",
+                        isHidden ? "Hide password" : "Show password"
+                    );
+
+                    button.setAttribute(
+                        "aria-pressed",
+                        isHidden
+                    );
+                }
+            </script>
+
+            <a href="Forgot/forgot.html" class="forgot">Forgot your password?</a>
+
+            <div class="btn-container">
+                <button class="login-btn" href="dashboard.html">Log in</button>
+                <!-- remove this href= kapag may database na-->
+            </div>
+
+            <p style="margin-top: 25px;">
+                Don't have an account? <a href="signup.html">Sign up here!</a>
+            </p>
+        </div>
+        <script src="login.html"></script>
+    </div>
+</body>
+
+</html>

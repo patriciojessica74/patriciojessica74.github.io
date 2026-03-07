@@ -1,0 +1,74 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCAT CMS | Subject Attendance</title>
+  <link rel="stylesheet" href="attendance-view.css" />
+</head>
+
+<body>
+
+  <div class="layout">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logoBox">
+        <img src="image/scatlogo.png" alt="SCAT CMS" class="logo">
+      </div>
+
+      <nav class="menu">
+        <a class="menuItem" href="dashboard.html">Dashboard</a>
+        <a class="menuItem" href="schedule.html">Schedule</a>
+        <a class="menuItem active" href="attendance.html">Attendance Tracking</a>
+        <a class="menuItem" href="profile.html">Profile</a>
+      </nav>
+
+      <div class="logoutWrap">
+        <button id="logoutBtn" class="logoutBtn">Logout</button>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <h1 class="headTitle" id="subjectCodeTitle">—</h1>
+
+      <!-- top white info bar -->
+      <div class="topBar">
+        <div class="leftInfo" id="subjectLine">Subject: —</div>
+
+        <div class="rightInfo">
+          <span class="mini" id="dayLine">📅 —</span>
+          <span class="mini" id="timeLine">🕘 —</span>
+        </div>
+      </div>
+
+      <!-- table board -->
+      <section class="tableBoard">
+        <div class="tableScroll">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Professor</th>
+                <th>Status</th>
+                <th>Time in</th>
+                <th>Date</th>
+                <th>Note</th>
+                <th class="chevHead"></th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+
+        <div class="actions">
+          <button class="dlBtn" id="downloadBtn" type="button">Download</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="attendance-view.js"></script>
+</body>
+
+</html>

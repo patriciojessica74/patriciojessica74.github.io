@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif
+}
+
+body {
+    margin: 0;
+    background: #cbb2b2
+}
+
+.layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    background: linear-gradient(90deg, #8f3a36 0 180px, #c8b0b0 180px 100%);
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: #8f3a36;
+    padding: 0 22px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.logoBox {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 22px
+}
+
+.logo {
+    width: 180px;
+    opacity: .95
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px
+}
+
+.menuItem {
+    text-decoration: none;
+    color: #111;
+    font-weight: 900;
+    padding: 16px 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+}
+
+.menuItem.active {
+    background: #fff
+}
+
+.menuItem:hover {
+    background: #d5d5d533
+}
+
+/* Push logout to bottom */
+.logoutWrap {
+    margin-top: auto;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Logout button style */
+.logoutBtn {
+    margin-top: 95px;
+    background: transparent;
+    color: #111;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.logoutBtn:hover {
+    background: #f1f1f1;
+    transform: scale(1.05);
+}
+
+/* main */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px
+}
+
+.menuItem {
+    text-decoration: none;
+    color: #111;
+    font-weight: 900;
+    padding: 16px 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, .00);
+}
+
+.menuItem.active {
+    background: #fff
+}
+
+.menuItem:hover {
+    background: #d5d5d533
+}
+
+/* Push logout to bottom */
+.logoutWrap {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Logout button style */
+.logoutBtn {
+    margin-top: 95px;
+    background: transparent;
+    color: #111;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.logoutBtn:hover {
+    background: #f1f1f1;
+    transform: scale(1.05);
+}
+
+/* MAIN */
+.main {
+    padding: 40px;
+}
+
+.pageTitle {
+    margin: 0 0 16px;
+    font-size: 46px;
+    font-weight: 900;
+    color: #111;
+}
+
+/* Program bar */
+.programBar {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, .15);
+    padding: 16px 18px;
+    font-weight: 900;
+    max-width: 980px;
+}
+
+/* Board */
+.board {
+    margin-top: 18px;
+    background: rgba(255, 255, 255, .30);
+    border-radius: 22px;
+    padding: 26px;
+    max-width: 980px;
+    min-height: 560px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .12);
+}
+
+/* subject cards grid */
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+}
+
+@media (max-width:900px) {
+    .cardsGrid {
+        grid-template-columns: 1fr
+    }
+}
+
+/* card */
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .12);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-1px)
+}
+
+.cardTitle {
+    font-weight: 900;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #e6e6e6;
+    font-weight: 900;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.slot {
+    background: #e6e6e6;
+    border-radius: 12px;
+    padding: 12px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
+}
+
+.slot small {
+    display: block;
+    margin-top: 6px;
+    font-weight: 800;
+    opacity: .85;
+}
+
+.chev {
+    font-size: 22px
+}
+
+/* empty */
+.empty {
+    background: #fff;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .12);
+    font-weight: 900;
+    opacity: .9;
+}
+
+/* mobile Responsive */
+@media (max-width:900px) {
+    .layout {
+        grid-template-columns: 180px 1fr
+    }
+
+    .rightPanel {
+        grid-column: 1/-1;
+        display: none;
+    }
+}
+
+@media (max-width:900px) {
+    .layout {
+        grid-template-columns: 180px 1fr;
+    }
+
+    .sidebar {
+        position: relative
+    }
+}

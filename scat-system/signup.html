@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- LEFT SIDE -->
+        <div class="left-panel">
+            <div class="overlay">
+                <img src="image/scatlogo.png" alt="SCAT CMS Logo" class="logo">
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-panel">
+            <h1>Create your account</h1>
+            <p class="login-link">
+                Already have an account? <a href="login.html">Log in here!</a>
+            </p>
+            <form id="signupForm" action="#"> <!--(#) for database-->
+                <div class="input-grid">
+                    <div class="col">
+                        <div class="input-group">
+                            <label>Username</label>
+                            <input type="text" id="username" placeholder="Choose username" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Full Name</label>
+                            <input type="text" id="fullname" placeholder="Enter your Full Name (e.g. John Delacruz)"
+                                required>
+                        </div>
+                        <div class="input-group">
+                            <label>Student ID</label>
+                            <input type="text" id="studentid" placeholder="Enter your Student ID number" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="program">Program</label>
+                            <select class="required-field" id="program" required>
+                                <option value="" disabled selected>-- Select Bachelor's Degree Program --</option>
+                                <option value="BSIT">BS Information Technology</option>
+                                <option value="BSCS">BS Computer Science</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="row-flex">
+                            <div class="input-group">
+                                <label>Year</label>
+                                <select class="required-field" id="year" required>
+                                    <option value="" disabled selected>Select Year</option>
+                                    <option>1st</option>
+                                    <option>2nd</option>
+                                    <option>3rd</option>
+                                    <option>4th</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>Section</label>
+                                <select class="required-field" id="section" required>
+                                    <option value="" disabled selected>Your Section</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" id="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Password</label>
+                            <input type="password" id="password" minlength="8"
+                                placeholder="Create a password (min. 8 characters)" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Confirm Password</label>
+                            <input type="password" placeholder="Re-enter your password" id="confirmPassword" required>
+                            <span id="password-error" style="color:red; display:none; font-size:14px;">Passwords do not
+                                match</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-divider">
+                    <span>SELECT YOUR STATUS</span>
+                </div>
+                <p>If you do not belong here you can skip this</p>
+
+                <div class="status-grid">
+                    <label class="status-card">
+                        <input type="radio" name="status" value="senior">
+                        <div class="card-content">
+                            <div class="text-info"><strong>SENIOR</strong>
+                                <span>(Age 60 or above)</span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="status-card">
+                        <input type="radio" name="status" value="pregnant">
+                        <div class="card-content">
+                            <div class="text-info"><strong>PREGNANT</strong>
+                                <span>(Expecting a baby)</span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="status-card">
+                        <input type="radio" name="status" value="working">
+                        <div class="card-content">
+                            <div class="text-info"><strong>WORKING STUDENT</strong>
+                                <span>(Studying while working)</span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="status-card pwd-card">
+                        <input type="radio" name="status" value="pwd" id="status-pwd">
+
+                        <div class="card-content pwd-content">
+                            <div class="text-info">
+                                <strong>PWD</strong>
+                                <span>Person(s) with disabilities</span>
+                            </div>
+                            <select name="pwd_type" id="pwd_type" disabled>
+                                <option value="" disabled selected>Select disability</option>
+                                <option value="visual">Visual Impairment</option>
+                                <option value="hearing">Hearing Impairment</option>
+                                <option value="physical">Physical Disability</option>
+                                <option value="learning">Learning Disability</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="center">
+                    <p id="errMsg" style="margin:10px 0 0;color:#b00000;font-weight:700;"></p>
+                    <button type="submit" class="register-btn"> Register </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAT CMS | Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="layout">
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+            <div class="logoBox">
+                <img src="image/scatlogo.png" alt="SCAT CMS" class="logo">
+            </div>
+
+            <nav class="menu">
+                <a class="menuItem active" href="dashboard.html">Dashboard</a>
+                <a class="menuItem" href="schedule.html">Schedule</a>
+                <a class="menuItem" href="attendance.html">Attendance Tracking</a>
+                <a class="menuItem" href="profile.html">Profile</a>
+            </nav>
+            <div class="logoutWrap">
+                <button id="logoutBtn" class="logoutBtn">Logout</button>
+            </div>
+        </aside>
+
+        <!-- CENTER -->
+        <main class="center">
+            <h1 class="title">My SUBJECTS</h1>
+            <div class="subjectsScroll" id="subjectsScroll"></div>
+        </main>
+
+        <!-- RIGHT PANEL -->
+        <aside class="rightPanel">
+            <div class="profileCard">
+                <div class="profileTop">
+                    <div class="avatar">
+                        <img src="image/profile.jpeg" alt="Profile" id="profileImage">
+                    </div>
+
+                    <div class="profileInfo">
+                        <div class="name" id="dashName">Name: </div>
+                        <div class="id" id="dashId">Student ID: </div>
+                        <div class="course" id="dashProgram">Program: </div>
+                        <div class="year" id="dashYear">Year:</div>
+                        <div class="section" id="dashSection">Section:</div>
+                    </div>
+                </div>
+
+                <button class="personalBtn" type="button">
+                    PERSONAL INFO <span>›</span>
+                </button>
+
+            </div>
+
+            <div class="warningBox">
+                <div class="warningHeader">⚠ WARNING NOTICE</div>
+                <div class="warningBody" id="warningBody">
+                    <div class="noWarn">NO WARNING TODAY</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

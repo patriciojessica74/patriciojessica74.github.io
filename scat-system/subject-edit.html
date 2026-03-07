@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCAT CMS | Subject Editor</title>
+  <link rel="stylesheet" href="subject-edit.css" />
+</head>
+
+<body>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="logoBox">
+        <img src="image/scatlogo.png" alt="SCAT CMS" class="logo">
+      </div>
+
+      <nav class="menu">
+        <a class="menuItem" href="dashboard.html">Dashboard</a>
+        <a class="menuItem active" href="schedule-edit.html">Schedule</a>
+        <a class="menuItem" href="#" onclick="alert('Attendance Tracking page not yet added');return false;">Attendance
+          Tracking</a>
+        <a class="menuItem" href="profile.html">Profile</a>
+      </nav>
+
+      <div class="logoutWrap">
+        <button id="logoutBtn" class="logoutBtn">Logout</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="card">
+        <h2 class="title">Subject Details</h2>
+        <div id="msg" class="msg"></div>
+
+        <div class="grid">
+          <div class="row">
+            <label>Subject Code</label>
+            <select id="subjectCode">
+              <option value="" disabled selected>Select Subject Code</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <label>Subject Name</label>
+            <input id="subjectName" type="text" readonly>
+          </div>
+
+          <div class="row">
+            <label>Professor</label>
+            <select id="professor">
+              <option value="" disabled selected>Select Professor</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <label>Room</label>
+            <input id="room" type="text" readonly>
+          </div>
+
+          <div class="row">
+            <label>Day</label>
+            <select id="day">
+              <option value="" disabled selected>Select Day</option>
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <label>Semester</label>
+            <select id="semester">
+              <option value="" disabled selected>Select Semester</option>
+              <option>1st Sem</option>
+              <option>2nd Sem</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <label>Start Time</label>
+            <input id="startTime" type="time">
+          </div>
+
+          <div class="row">
+            <label>End Time</label>
+            <input id="endTime" type="time">
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="cancelBtn" type="button" class="grayBtn">Cancel</button>
+
+          <div class="rightBtns">
+            <button id="deleteBtn" type="button" class="dangerBtn">Delete</button>
+            <button id="saveBtn" type="button" class="saveBtn">Save</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="subject-edit.js"></script>
+</body>
+
+</html>

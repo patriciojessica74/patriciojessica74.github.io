@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCAT CMS | Attendance Tracking</title>
+  <link rel="stylesheet" href="attendance.css" />
+</head>
+
+<body>
+
+  <div class="layout">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logoBox">
+        <img src="image/scatlogo.png" alt="SCAT CMS" class="logo">
+      </div>
+
+      <nav class="menu">
+        <a class="menuItem" href="dashboard.html">Dashboard</a>
+        <a class="menuItem" href="schedule.html">Schedule</a>
+        <a class="menuItem active" href="attendance.html">Attendance Tracking</a>
+        <a class="menuItem" href="profile.html">Profile</a>
+      </nav>
+
+      <div class="logoutWrap">
+        <button id="logoutBtn" class="logoutBtn">Logout</button>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <h1 class="pageTitle" id="pageTitle">Attendance Tracking</h1>
+
+      <!-- white bar like your design -->
+      <div class="programBar" id="programBar">—</div>
+
+      <section class="board">
+        <div class="cardsGrid" id="cardsGrid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="attendance.js"></script>
+</body>
+
+</html>
