@@ -234,7 +234,7 @@ a {
     font-size: clamp(2rem, 4.8vw, 3.4rem);
     line-height: 1.02;
     margin: 0 0 10px;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.04em;
     text-align: center;
 }
 
