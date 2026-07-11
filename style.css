@@ -200,7 +200,7 @@ a {
 
 .hero-art {
     position: relative;
-    min-height: 440px;
+    min-height: 340px;
     display: flex;
     align-items: center;
     justify-content: center;
