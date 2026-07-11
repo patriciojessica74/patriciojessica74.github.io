@@ -208,7 +208,7 @@ a {
 
 .hero-card {
     position: relative;
-    width: min(330px, 70%);
+    width: min(250px, 50%);
     background: rgba(255, 255, 255, .2);
     border: 1px solid rgba(255, 255, 255, .35);
     border-radius: 32px;
@@ -218,8 +218,8 @@ a {
 }
 
 .hero-card img {
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
     aspect-ratio: 4 / 4.2;
 }
