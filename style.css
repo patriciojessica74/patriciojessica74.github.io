@@ -233,7 +233,7 @@ a {
 .section-title {
     font-size: clamp(2rem, 4.8vw, 3.4rem);
     line-height: 1.02;
-    margin: 0 0 26px;
+    margin: 0 0 10px;
     letter-spacing: -0.03em;
     text-align: center;
 }
@@ -250,7 +250,7 @@ a {
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 15px 28px rgba(0, 0, 0, .09);
-    max-width: 380px;
+    max-width: 450px;
 }
 
 .about-photo img {
