@@ -241,7 +241,7 @@ a {
 .about-grid {
     display: grid;
     grid-template-columns: .8fr 1.2fr;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
 }
 
