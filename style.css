@@ -200,7 +200,7 @@ a {
 
 .hero-art {
     position: relative;
-    min-height: 440px;
+    min-height: 340px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,7 +208,7 @@ a {
 
 .hero-card {
     position: relative;
-    width: min(420px, 90%);
+    width: min(320px, 90%);
     background: rgba(255, 255, 255, .2);
     border: 1px solid rgba(255, 255, 255, .35);
     border-radius: 32px;
